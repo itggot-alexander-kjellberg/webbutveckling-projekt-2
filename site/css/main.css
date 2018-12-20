@@ -34,8 +34,7 @@ header{
 p{
     color: white;
     font-size: 2rem;
-    display: flex;
-    justify-content: center; 
+    text-align: center;
 
 }
 main{
