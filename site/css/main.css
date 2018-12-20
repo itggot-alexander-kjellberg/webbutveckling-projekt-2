@@ -1,5 +1,50 @@
+/* mobil här först */
 body{
     margin: 0;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
+    background: url(../img/bakrund\ jullich\ psd\ stor.png)
 }
+
+/* wrapper måste ha 6 rader, 1 rad för header en 4 för main pga granen sen en för footer.
+   wrapper måste ha 4 columner för alla cirklarna. granarna spanar mellan två i main och byta flik grejen 
+   ligger som en "transform: translate()" eller så*/
+/* ta kanske bort auto */
+.wrapper{
+    display: grid;
+    grid-template-rows: 75px auto 100px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "cirklar"
+    "gran"
+    "footer"}
+
+header{
+    grid-area: cirklar;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cirkel{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: aqua; 
+}
+p{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; 
+
+}
+main{
+    grid-area: gran;
+}
+footer{
+    background-color: #DE6977;
+    grid-area: footer;
+
+}
+
+
