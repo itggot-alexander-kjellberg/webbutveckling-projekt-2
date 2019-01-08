@@ -28,14 +28,60 @@ header{
 .cirkel{
     height: 75px;
     width: 75px;
-    border-radius: 50%;
-    background-color: aqua; 
+    border-radius: 50%; 
+    background-color: #2EFF7B;
 }
+
+
+.cirkel:nth-child(2){
+    background-color: #F55656;
+}
+
+.cirkel:nth-child(3){
+    background-color: white;
+    color: black;
+}
+
+.rund{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%; 
+    background-color: #79D5EA;
+}
+
+h1{
+    font-size: 33px;
+    text-align: center;
+    margin: 19px;
+    color: white;    
+}
+h2{
+    font-size: 33px;
+    text-align: center;
+    margin: 19px;
+    color: #707070;
+}
+
+.rund:nth-child(2){
+    background-color: white;
+
+}
+
+.rund:nth-child(4){
+    background-color: white;
+
+}
+
+
 p{
     color: white;
     font-size: 2rem;
     text-align: center;
-
+    margin: 19px;
+}
+/* VARFÖR BLIR INTE 3 TEXTEN ANNORLUNDA/SVART? */
+p:nth-child(3){
+    color: black;
 }
 main{
     grid-area: gran;
