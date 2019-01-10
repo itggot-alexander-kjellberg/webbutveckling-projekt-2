@@ -89,6 +89,14 @@ main{
 
 }
 
+.activate_host{
+    margin-right: 600px;
+}
+
+.host{
+    margin-left: 600px;
+}
+
 .bilder{
     display: flex;
     flex-direction: column;
