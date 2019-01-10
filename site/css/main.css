@@ -17,7 +17,8 @@ body{
     grid-template-areas: 
     "cirklar"
     "gran"
-    "footer"}
+    "footer"
+}
 
 header{
     grid-area: cirklar;
@@ -79,13 +80,41 @@ p{
     text-align: center;
     margin: 19px;
 }
-/* VARFÖR BLIR INTE 3 TEXTEN ANNORLUNDA/SVART? */
+
 p:nth-child(3){
     color: black;
 }
 main{
     grid-area: gran;
+
 }
+
+.bilder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bilder img:nth-child(1){
+    width: 35px;
+    height: 59px;
+}
+.bilder img:nth-child(2){
+    width: 134px;
+    height: 64px;
+}
+
+.bilder img:nth-child(3){
+    width: 160px;
+    height: 59px;
+}
+
+.bilder img:nth-child(4){
+    width: 203px;
+    height: 59px;
+}
+
+
 footer{
     background-color: #DE6977;
     grid-area: footer;
