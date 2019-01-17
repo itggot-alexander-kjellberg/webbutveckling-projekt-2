@@ -118,9 +118,7 @@ main{
 .host{
     margin-left: 1500px;
 }
-.activate_host{
-    margin-right: 600px;
-}
+
 .bilder{
     display: flex;
     flex-direction: column;
