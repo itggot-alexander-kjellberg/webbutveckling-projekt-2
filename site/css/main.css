@@ -12,8 +12,8 @@ body{
 /* ta kanske bort auto */
 .wrapper{
     display: grid;
-    grid-template-rows: 75px auto 100px;
-    grid-template-columns: 100%;
+    grid-template-rows: 75px auto 1000px;
+    grid-template-columns: 100vw;
     grid-template-areas: 
     "cirklar"
     "gran"
@@ -89,14 +89,34 @@ main{
 
 }
 
+.dflik{
+    position: fixed;
+    height: 90px;
+    width: 90px;
+    background-color: #2EFF7B;
+    top: 110px;
+    left: 15px;
+    border-radius: 15px;
+}
+
+.nyflik{
+    position: fixed;
+    height: 90px;
+    width: 90px;
+    background-color: red;
+    top: 250px;
+    left: 15px;
+    border-radius: 15px;
+}
+
+
+
+.host{
+    margin-left: 1500px;
+}
 .activate_host{
     margin-right: 600px;
 }
-
-.host{
-    margin-left: 600px;
-}
-
 .bilder{
     display: flex;
     flex-direction: column;
@@ -126,7 +146,10 @@ main{
 footer{
     background-color: #DE6977;
     grid-area: footer;
+    margin-top: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-
 
