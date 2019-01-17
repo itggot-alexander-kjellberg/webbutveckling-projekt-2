@@ -93,19 +93,23 @@ main{
     position: fixed;
     height: 90px;
     width: 90px;
-    background-color: #2EFF7B;
+    background-color: white;
     top: 110px;
     left: 15px;
+    border: 1px solid gray;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .nyflik{
     position: fixed;
     height: 90px;
     width: 90px;
-    background-color: red;
+    background-color: white;
     top: 250px;
     left: 15px;
+    border: 1px solid gray;
     border-radius: 15px;
 }
 
