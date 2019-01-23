@@ -14,3 +14,11 @@ function visaHundraprocent(event){
     let hundraprocent = document.querySelector("#hundraprocent")
     hundraprocent.classList.toggle("host")
 }
+
+
+function visaTjugoprocent(event){
+    let uggabugga = document.querySelector("#buggaugga")
+    hippity.classList.toggle(yst)
+
+
+}

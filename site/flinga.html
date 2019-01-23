@@ -10,10 +10,11 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="rund"><h1>1</h1></div>
-            <div class="rund"><h2>2</h2></div>
-            <div class="rund"><h1>3</h1></div>
-            <div class="rund"><h2>4</h2></div>
+            <!-- NAMNET PÅ "ONCLICK" ÄR INTE SAMMA SOM I INDEX HÄR ÄR DET ETT "a" EXTRA -->
+            <div class="rund" onclick="visaTjugoprocenta()"><h1>1</h1></div>
+            <div class="rund" onclick="visaFemtioprocenta()"><h2>2</h2></div>
+            <div class="rund" onclick="visaSjuttioprocenta()"><h1>3</h1></div>
+            <div class="rund" onclick="visaHundraprocenta()"><h2>4</h2></div>
         </header>
         <main>
                 <div class="dflik">
@@ -24,14 +25,15 @@
                     </div>
 
             <div class="bilder2">
-                <img class="yst" src="img/fling 25.png" alt="feta ost">
-                <img class="yst" src="img/fling 50.png" alt="feta ost">
-                <img class="yst" src="img/fling 75.png" alt="feta ost">
-                <img class="yst" src="img/fling 100.png" alt="feta ost">
+                <img class="yst" id="tjugoprocenta" src="img/fling 25.png" alt="feta ost">
+                <img class="yst" id="femtioprocenta" src="img/fling 50.png" alt="feta ost">
+                <img class="yst" id="sjuttioprocenta" src="img/fling 75.png" alt="feta ost">
+                <img class="yst" id="hundraprocenta" src="img/fling 100.png" alt="feta ost">
             </div>
         </main>
         
         <footer></footer>
     </div>
+    <script src="js/jmain.js"></script>
 </body>
 </html>
