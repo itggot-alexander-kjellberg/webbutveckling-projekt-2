@@ -245,7 +245,19 @@ main{
     margin-top: 100px;
 }
 
+.bilder2{
+    margin-left: 1500px;
+}
 
+.rund{
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+}
 
 
 

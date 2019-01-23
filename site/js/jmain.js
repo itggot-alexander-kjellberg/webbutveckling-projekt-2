@@ -17,8 +17,7 @@ function visaHundraprocent(event){
 
 
 function visaTjugoprocent(event){
-    let uggabugga = document.querySelector("#buggaugga")
-    hippity.classList.toggle(yst)
-
+    let yst = document.querySelector("#tjugoprocenta")
+    yst.classList.toggle("yst")
 
 }
