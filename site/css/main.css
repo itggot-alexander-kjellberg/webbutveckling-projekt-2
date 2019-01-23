@@ -6,10 +6,7 @@ body{
     background: url(../img/bakrund\ jullich\ psd\ stor.png)
 }
 
-/* wrapper måste ha 6 rader, 1 rad för header en 4 för main pga granen sen en för footer.
-   wrapper måste ha 4 columner för alla cirklarna. granarna spanar mellan två i main och byta flik grejen 
-   ligger som en "transform: translate()" eller så*/
-/* ta kanske bort auto */
+
 .wrapper{
     display: grid;
     grid-template-rows: 75px auto 1000px;
@@ -31,6 +28,7 @@ header{
     width: 75px;
     border-radius: 50%; 
     background-color: #2EFF7B;
+    border: 1px solid gray;
 }
 
 
@@ -143,7 +141,35 @@ main{
     width: 203px;
     height: 59px;
 }
+.yst{
+    margin-left: 200px;
+}
+.bilder2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 40px;
+}
 
+.bilder2 img:nth-child(1){
+    width: 105px;
+    padding-left: 38%;
+    margin-top: 7px;
+ 
+}
+
+.bilder2 img:nth-child(2){
+    width: 110px;
+    margin-top: 7px;
+}
+.bilder2 img:nth-child(3){
+    width: 110px;
+    padding-left: 37%;
+}
+.bilder2 img:nth-child(4){
+    width: 110px;
+    margin-left: 3px;
+}
 
 footer{
     background-color: #DE6977;
@@ -155,3 +181,72 @@ footer{
 
 }
 
+
+/* for desktop */
+@media only screen and (min-width: 768px){
+.wrapper{
+    grid-template-columns: 150px auto;
+    grid-template-rows: 130px auto 170px;
+    grid-template-areas:
+    "huvud huvud"
+    "siffror bild"
+    "footer footer"
+}
+
+.skugga{
+    grid-area: huvud;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header{
+    grid-area: siffror;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+
+}
+
+main{
+    grid-area: bild;
+}
+
+.dflik{
+    top: 90px;
+    left: 450px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nyflik{
+    top: 90px;
+    left: 900px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cirkel{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.bilder{
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+}
